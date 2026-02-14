@@ -37,9 +37,8 @@ A modern, fully responsive website for an environmental NGO focused on forest re
 ## Setup & Installation
 
 1. **Clone or download** the repository.
-   ```bash
+
    git clone https://github.com/your-username/greenleaf-ngo.git
-```
 
 1. Open index.html in any modern web browser.
 2. No build tools, package managers, or server setup are required – the site runs entirely on the client side.
