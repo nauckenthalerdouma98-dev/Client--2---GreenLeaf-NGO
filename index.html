@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>GreenLeaf NGO – Environmental restoration in Africa</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="globe-africa - Copy.svg" type="image/x-icon" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="nav-container">
+        <!-- Social topbar -->
+        <div class="social-topbar">
+            <div class="social-links" aria-label="Social media">
+                <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"
+                        aria-hidden="true"></i></a>
+                <a href="#" title="X (formerly Twitter)" aria-label="X"><i class="fab fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="#" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"
+                        aria-hidden="true"></i></a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"
+                        aria-hidden="true"></i></a>
+                <a href="#" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <div class="topbar-contact" aria-label="Contact information">
+                <span><i class="fas fa-envelope" aria-hidden="true"></i> <a href="/cdn-cgi/l/email-protection"
+                        class="__cf_email__"
+                        data-cfemail="2b4844455f4a485f6b4c594e4e45474e4a4d06454c440544594c">[email&#160;protected]</a></span>
+                <span><i class="fas fa-phone" aria-hidden="true"></i> +254 XXX XXX XXX</span>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="main-navbar" aria-label="Main">
+            <div class="logo-section">
+                <div class="logo-icon" aria-hidden="true">
+                    <i class="fa fa-leaf" aria-hidden="true"></i>
+                </div>
+                <div class="org-name">Green<span>Leaf</span></div>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#transparency">Transparency</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Language switcher -->
+            <div class="lang-switcher" aria-label="Language switcher">
+                <a href="#" lang="en" aria-current="true" class="active" onclick="return false;">EN</a>
+                <span aria-hidden="true">|</span>
+                <a href="#" lang="fr" onclick="translatePage(); return false;" class="translate-btn">FR</a>
+            </div>
+
+            <button class="donate-btn">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                <span>DONATE</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ========== HOME SECTION ========== -->
+        <section id="home" class="Home-Section">
+            <div class="Home">
+                <!-- Hero image – replace with your own -->
+                <img src="Images/Img 1.png" alt="Kenyan women harvesting tea leaves in a lush green plantation"
+                    class="home-image" loading="lazy" />
+                <div class="foreground">
+                    <div class="home-content">
+                        <h1>Welcome to Green<span>Leaf</span> NGO</h1>
+                        <p>Protect, restore and sustainably manage African forest ecosystems in collaboration with local
+                            communities.</p>
+                        <a href="#about" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key figures -->
+            <div class="key-figures" aria-labelledby="kf-heading">
+                <h2 id="kf-heading" class="visually-hidden">Key figures and impact</h2>
+                <ul class="figures-card" role="list">
+                    <li class="card-f-1" tabindex="0" aria-label="Planted trees: 457,000">
+                        <i class="fa fa-globe-africa" aria-hidden="true"></i>
+                        <div class="fore" role="group">
+                            <span class="metric-number" id="m-1">457 000</span>
+                            <span class="metric-label">Planted trees</span>
+                            <i class="fas fa-tree metric-icon" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="card-f-2" tabindex="0" aria-label="Beneficiaries: 9,400">
+                        <i class="fa fa-globe-africa" aria-hidden="true"></i>
+                        <div class="fore" role="group">
+                            <span class="metric-number" id="m-2">9 400</span>
+                            <span class="metric-label">Beneficiaries</span>
+                            <i class="fas fa-home metric-icon" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="card-f-3" tabindex="0" aria-label="Survival rate: 82 percent">
+                        <i class="fa fa-globe-africa" aria-hidden="true"></i>
+                        <div class="fore" role="group">
+                            <span class="metric-number" id="m-3">82%</span>
+                            <span class="metric-label">Survival rate</span>
+                            <i class="fas fa-seedling metric-icon" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="card-f-4" tabindex="0" aria-label="Years active: 9 years">
+                        <i class="fa fa-globe-africa" aria-hidden="true"></i>
+                        <div class="fore" role="group">
+                            <span class="metric-number" id="m-4">9</span>
+                            <span class="metric-label">Years activity</span>
+                            <i class="fas fa-calendar-alt metric-icon" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mission section -->
+            <div class="mission-section">
+                <h2>Our Mission</h2>
+                <p class="mission-statement"><strong>Protect, restore and sustainably manage African forest ecosystems
+                        in collaboration with local communities.</strong></p>
+                <p>Since 2016, GreenLeaf NGO has been developing community reforestation, watershed protection and
+                    environmental education programs. The organization is registered in Kenya with local governance and
+                    a scientific approach.</p>
+                <a href="#about" class="secondary-btn">Learn more about us</a>
+            </div>
+
+            <!-- Programs teaser -->
+            <section class="programs-teaser">
+                <h2>Our Programs</h2>
+                <div class="program-grid">
+                    <article class="program-card card-bg-image">
+                        <i class="fas fa-tree" aria-hidden="true"></i>
+                        <h3>Community Reforestation</h3>
+                        <p>Local nurseries, indigenous species, 3-year post-planting monitoring.</p>
+                        <a href="#programs" class="program-link">Learn more</a>
+                    </article>
+                    <article class="program-card card-bg-image">
+                        <i class="fas fa-water" aria-hidden="true"></i>
+                        <h3>Watershed Protection</h3>
+                        <p>Riparian reforestation, erosion control, water quality improvement.</p>
+                        <a href="#programs" class="program-link">Learn more</a>
+                    </article>
+                    <article class="program-card card-bg-image">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        <h3>Environmental Education</h3>
+                        <p>School programs, teacher training, green clubs in rural areas.</p>
+                        <a href="#programs" class="program-link">Learn more</a>
+                    </article>
+                    <article class="program-card card-bg-image">
+                        <i class="fas fa-seedling" aria-hidden="true"></i>
+                        <h3>Agroforestry & Livelihoods</h3>
+                        <p>Supporting smallholder farmers with sustainable techniques.</p>
+                        <a href="#programs" class="program-link">Learn more</a>
+                    </article>
+                </div>
+                <div class="programs-cta">
+                    <a href="#programs" class="view-all-btn">View all programs</a>
+                </div>
+            </section>
+
+            <!-- ========== ABOUT SECTION ========== -->
+            <section id="about" class="section-container">
+                <h2>About GreenLeaf</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3>Our Story</h3>
+                        <p>GreenLeaf NGO was established in <strong>2016 in Nairobi, Kenya</strong>, and is officially
+                            registered under the Kenyan NGO Coordination Board *******. From the beginning,
+                            we have placed African communities at the heart of forest restoration.</p>
+                        <p>Our governance is locally rooted: the Board of Directors is majority Kenyan, and our
+                            executive team is based in Nairobi. We combine scientific methods with traditional
+                            knowledge.</p>
+                        <h3>Mission, Vision & Values</h3>
+                        <p><strong>Mission:</strong> Protect, restore and sustainably manage African forest ecosystems
+                            in collaboration with local communities.</p>
+                        <p><strong>Vision:</strong> Resilient African forest ecosystems, protected by and for local
+                            populations.</p>
+                        <p><strong>Values:</strong> African local leadership, environmental sustainability, financial
+                            transparency, community inclusion, scientific accountability.</p>
+                    </div>
+                    <div>
+                        <h3>Strategic Plan 2025–2030</h3>
+                        <ul class="custom-list">
+                            <li>Large‑scale reforestation</li>
+                            <li>Watershed protection</li>
+                            <li>Community empowerment</li>
+                            <li>Environmental education</li>
+                            <li>Impact measurement & transparency</li>
+                        </ul>
+                        <h3>Governance</h3>
+                        <p><strong>Board of Directors:</strong> X members, X‑year renewable term, majority
+                            non‑executive.</p>
+                        <p><strong>Executive Director</strong> (Nairobi) · <strong>Deputy Director – Programs</strong> ·
+                            <strong>Finance & Compliance Manager</strong></p>
+                        <p><strong>Committees:</strong> Audit & Compliance, Programs & Impact, Ethics & Safeguarding.
+                        </p>
+                        <p><strong>Registration:</strong> ********** · Riverside Drive, Westlands, Nairobi 00800,
+                            Kenya</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== PROGRAMS SECTION (full detail) ========== -->
+            <section id="programs" class="section-container">
+                <h2>Our Programs – Full Overview</h2>
+                <p class="section-intro">GreenLeaf primarily operates in <strong>East Africa (Kenya, Uganda,
+                        Tanzania)</strong> and secondarily in West Africa. All programs are co‑constructed with
+                    communities and based on scientific data.</p>
+                <div class="grid-3">
+                    <div class="card card-bg-image">
+                        <i class="fas fa-tree"></i>
+                        <h3>Community Reforestation</h3>
+                        <p><strong>Regions:</strong> Rift Valley, Mount Kenya, Machakos (Kenya).</p>
+                        <p>Local nurseries managed by communities; exclusive planting of indigenous species; 3‑year
+                            post‑planting monitoring. <strong>350 000+ trees planted, survival rate >80%.</strong></p>
+                    </div>
+                    <div class="card card-bg-image">
+                        <i class="fas fa-water"></i>
+                        <h3>Watershed Protection</h3>
+                        <p>Riparian reforestation, erosion control, water quality improvement. Partnership with local
+                            water authorities. <strong>15 springs protected, 300 hectares restored.</strong></p>
+                    </div>
+                    <div class="card card-bg-image">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Environmental Education</h3>
+                        <p><strong>Green Schools Program:</strong> 120 partner schools, 8 000+ pupils sensitized.
+                            Teacher training, green clubs, educational outings.</p>
+                    </div>
+                    <div class="card card-bg-image">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Agroforestry & Livelihoods</h3>
+                        <p>Support for smallholder farmers: agroforestry techniques, income diversification, reduction
+                            of pressure on forests. <strong>9 400 beneficiary households.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== IMPACT SECTION ========== -->
+            <section id="impact" class="section-container">
+                <h2>Our Impact – Measurable & Verified</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3>Key Performance Indicators</h3>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-tree" aria-hidden="true"></i> <strong>457 000</strong> trees planted
+                                (82% survival rate)</li>
+                            <li><i class="fas fa-globe-africa" aria-hidden="true"></i> <strong>1 150</strong> hectares
+                                restored</li>
+                            <li><i class="fas fa-home" aria-hidden="true"></i> <strong>9 400</strong> beneficiary
+                                households</li>
+                            <li><i class="fas fa-school" aria-hidden="true"></i> <strong>120</strong> partner schools
+                            </li>
+                            <li><i class="fas fa-hand-holding-heart" aria-hidden="true"></i> <strong>1 200</strong>
+                                active volunteers</li>
+                            <li><i class="fas fa-globe-africa" aria-hidden="true"></i> <strong>6</strong> countries of
+                                intervention</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Project Spotlights</h3>
+                        <div class="spotlight-card">
+                            <h4>Sahel Vert – Senegal</h4>
+                            <p>120 000 trees planted · 35 villages involved · Restoration of degraded land.</p>
+                        </div>
+                        <div class="spotlight-card">
+                            <h4>Tana River Basin – Kenya</h4>
+                            <p>300 hectares protected · 15 water sources secured · Erosion control structures.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="download-report">
+                    <a href="#" class="secondary-btn"><i class="fas fa-download"></i> Download Annual Impact Report 2025
+                        (PDF)</a>
+                </p>
+            </section>
+
+            <!-- ========== TRANSPARENCY SECTION ========== -->
+            <section id="transparency" class="section-container">
+                <h2>Transparency & Accountability</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3>Financial Information</h3>
+                        <p>Our accounts are audited annually by an independent firm. Funding sources:</p>
+                        <ul class="funding-list">
+                            <li>Institutional grants (45%)</li>
+                            <li>Private foundations (30%)</li>
+                            <li>Corporate partnerships (15%)</li>
+                            <li>Individual donations (10%)</li>
+                        </ul>
+                        <p><a href="#" class="secondary-btn"><i class="fas fa-file-invoice"></i> Audited accounts
+                                2025</a></p>
+                    </div>
+                    <div>
+                        <h3>Policies (downloadable PDFs)</h3>
+                        <ul class="policy-list">
+                            <li><i class="fas fa-file-pdf" style="color:red;"></i> <a href="#">Safeguarding Policy</a>
+                            </li>
+                            <li><i class="fas fa-file-pdf" style="color:red;"></i> <a href="#">Anti‑Corruption
+                                    Policy</a></li>
+                            <li><i class="fas fa-file-pdf" style="color:red;"></i> <a href="#">Equality & Inclusion
+                                    Policy</a></li>
+                            <li><i class="fas fa-file-pdf" style="color:red;"></i> <a href="#">Environmental Policy</a>
+                            </li>
+                            <li><i class="fas fa-file-pdf" style="color:red;"></i> <a href="#">GDPR Privacy Policy (EU
+                                    donors)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="archive-reports">
+                    <h3>Annual Reports Archive</h3>
+                    <ul class="report-list">
+                        <li><i class="fas fa-file-pdf"></i> <a href="#">Annual Report 2024</a></li>
+                        <li><i class="fas fa-file-pdf"></i> <a href="#">Annual Report 2023</a></li>
+                        <li><i class="fas fa-file-pdf"></i> <a href="#">Annual Report 2022</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ========== PARTNERS SECTION ========== -->
+            <section id="partners" class="section-container">
+                <h2>Our Partners</h2>
+
+                <h3>Institutional Partners</h3>
+                <div class="partner-logos">
+                    <img src= "Images/Unuathorized.png" alt="Kenya Forest Service logo" loading="lazy" width="180" height="100">
+                    <img src= "Images/Unuathorized.png" alt="UNEP logo"
+                        loading="lazy" width="180" height="100">
+                    <img src= "Images/Unuathorized.png" alt="European Union logo" loading="lazy" width="180" height="100">
+                    <img src= "Images/Unuathorized.png" alt="Kenya Water Authority logo" loading="lazy" width="180" height="100">
+                </div>
+
+                <h3>Foundation & Corporate Partners</h3>
+                <div class="partner-logos">
+                    <img src= "Images/Unuathorized.png" alt="United Nations logo" loading="lazy">
+                    <img src= "Images/Unuathorized.png" alt="UNEP - United Nations Environment Programme logo" loading="lazy">
+                    <img src= "Images/Unuathorized.png" alt="USAID logo" loading="lazy">
+                </div>
+
+                <h3>NGO Partners</h3>
+                <div class="partner-logos">
+                    <img src= "Images/Unuathorized.png" alt="WWF - World Wildlife Fund logo" loading="lazy">
+                    <img src= "Images/Unuathorized.png" alt="Conservation International logo" loading="lazy">
+                    <img src= "Images/Unuathorized.png" alt="The Nature Conservancy logo" loading="lazy">
+                </div>
+
+                <div class="partner-cta">
+                    <a href="#contact" class="secondary-btn">Become a partner</a>
+                </div>
+            </section>
+
+            <!-- ========== NEWS SECTION ========== -->
+            <section id="news" class="section-container">
+                <h2>Latest News</h2>
+                <div class="grid-3">
+                    <article class="card card-bg-image news-article">
+                        <i class="fas fa-newspaper" aria-hidden="true"></i>
+                        <h3>GreenLeaf launches new tree nursery in Machakos</h3>
+                        <p class="news-meta">March 15, 2026</p>
+                        <p>A community-managed nursery with capacity of 50,000 seedlings per year – creating 20 local
+                            jobs.</p>
+                        <a href="#" class="program-link">Read more</a>
+                    </article>
+                    <article class="card card-bg-image news-article">
+                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                        <h3>GreenLeaf awarded UNEP Restoration Champion</h3>
+                        <p class="news-meta">February 2, 2026</p>
+                        <p>Recognition for our work on the Tana River watershed restoration project.</p>
+                        <a href="#" class="program-link">Read more</a>
+                    </article>
+                    <article class="card card-bg-image news-article">
+                        <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+                        <h3>200 teachers trained in environmental education</h3>
+                        <p class="news-meta">January 10, 2026</p>
+                        <p>New teaching modules on forest conservation now used in 120 schools.</p>
+                        <a href="#" class="program-link">Read more</a>
+                    </article>
+                </div>
+                <div class="news-cta">
+                    <a href="#" class="view-all-btn">View all news</a>
+                </div>
+            </section>
+
+            <!-- Newsletter sign-up -->
+            <section class="newsletter-section">
+                <div class="newsletter-container">
+                    <h2>Stay informed</h2>
+                    <p>Subscribe to our newsletter to receive our latest news and impact stories.</p>
+                    <form method="post" class="newsletter-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">First name</label>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to receive newsletters and accept the <a href="#">privacy
+                                    policy</a>.</label>
+                        </div>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="section-container">
+            <h2>Contact Us</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Send us a message</h3>
+                    <form action="#" method="post" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contact-name">Full name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-org">Organisation (optional)</label>
+                            <input type="text" id="contact-org" name="organisation" placeholder="Organisation">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="privacy-consent" name="privacy-consent" style=" width: 20px;"
+                                required>
+                            <label for="privacy-consent" style="color: #333;">I agree to the <a href="#"
+                                    style="color: green;">privacy policy</a>.</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send message</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Get in touch</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Riverside Drive, Westlands, Nairobi
+                            00800, Kenya</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +254 700 123 456</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="791a16170d181a0d391e0b1c1c17151c181f54171e1657160b1e">[email&#160;protected]</a>
+                        </p>
+                    </div>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map" aria-hidden="true"></i> Interactive map
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer role="contentinfo">
+        <div class="footer-main">
+            <div class="footer-col">
+                <h3>GreenLeaf NGO</h3>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Riverside Drive, Westlands, Nairobi 00800,
+                    Kenya</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="/cdn-cgi/l/email-protection"
+                        class="__cf_email__"
+                        data-cfemail="1a7975746e7b796e5a7d687f7f74767f7b7c37747d753475687d">[email&#160;protected]</a>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#transparency">Transparency</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow us</h3>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
