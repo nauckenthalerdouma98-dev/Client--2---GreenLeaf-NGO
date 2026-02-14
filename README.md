@@ -82,7 +82,8 @@ Colors & Fonts
 ├── Images/             # Folder for images
 │   ├── Img 1.png       # Hero image
 │   └── Unuathorized.png # Placeholder for partner logos
-└── README.md           # This file```
+└── README.md           # This file
+```
 
 ---
 
