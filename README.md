@@ -76,7 +76,6 @@ Colors & Fonts
 
 ## File Structure
 
-```
 greenleaf-ngo/
 ├── index.html          # Main HTML document
 ├── style.css           # All styles (fluid design)
@@ -85,7 +84,6 @@ greenleaf-ngo/
 │   ├── Img 1.png       # Hero image
 │   └── Unuathorized.png # Placeholder for partner logos
 └── README.md           # This file
-```
 
 ---
 
