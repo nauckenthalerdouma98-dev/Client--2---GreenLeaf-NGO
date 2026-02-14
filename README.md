@@ -2,7 +2,7 @@
 
 A modern, fully responsive website for an environmental NGO focused on forest restoration in Africa. The site features a clean design, interactive elements, and integrates with Google Sheets for newsletter sign‑ups without a backend.
 
-![GreenLeaf NGO screenshot]("Images/Img 1.png")  
+![GreenLeaf NGO screenshot](Images/Img 1.png)  
 *Hero section of the website*
 
 ---
