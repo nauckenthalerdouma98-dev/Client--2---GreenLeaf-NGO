@@ -38,7 +38,7 @@ A modern, fully responsive website for an environmental NGO focused on forest re
 
 1. **Clone or download** the repository.
 
-   git clone https://github.com/your-username/greenleaf-ngo.git
+   ```git clone https://github.com/your-username/greenleaf-ngo.git```
 
 1. Open index.html in any modern web browser.
 2. No build tools, package managers, or server setup are required – the site runs entirely on the client side.
@@ -75,14 +75,14 @@ Colors & Fonts
 
 ## File Structure
 
-greenleaf-ngo/
+```greenleaf-ngo/
 ├── index.html          # Main HTML document
 ├── style.css           # All styles (fluid design)
 ├── script.js           # JavaScript functionality
 ├── Images/             # Folder for images
 │   ├── Img 1.png       # Hero image
 │   └── Unuathorized.png # Placeholder for partner logos
-└── README.md           # This file
+└── README.md           # This file```
 
 ---
 
